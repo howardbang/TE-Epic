@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+            box-sizing: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(BACK.png);
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+        }
+        #img1{
+            display: block;
+            border-radius:50%;
+            border: 2px solid white;
+            position: relative;
+            width: 20vw;
+            height: 40vh;
+            background-image: url(暘.jpg);
+            background-position: center top 10%;
+
+        }
+        #img1:hover{
+            width: 23vw;
+            height: 45vh;
+            transition: width 0.1s linear,height 0.1s linear;
+            cursor: pointer;
+
+        }
+        #img2{
+            display: block;
+            border-radius:50%;
+            border: 2px solid white;
+            position: relative;
+            width: 20vw;
+            height: 40vh;
+            background-image: url(廖.jpg);
+            background-position: center top 10%;
+            background-size: cover;
+
+        }
+        #img2:hover{
+            width: 23vw;
+            height: 45vh;
+            transition: width 0.1s linear,height 0.1s linear;
+            cursor: pointer;
+
+        }
+        #img3{
+            display: block;
+            border-radius:50%;
+            border: 2px solid white;
+            position: relative;
+            width: 20vw;
+            height: 40vh;
+            background-image: url(囿.jpg);
+            background-size: cover;
+            background-position: center top 50%;
+
+        }
+        #img3:hover{
+            width: 23vw;
+            height: 45vh;
+            transition: width 0.1s linear,height 0.1s linear;
+            cursor: pointer;
+
+        }
+        #img4{
+            display: block;
+            border-radius:50%;
+            border: 2px solid white;
+            position: relative;
+            width: 20vw;
+            height: 40vh;
+            background-image: url(彭.jpg);
+            background-position: center left 28%;
+
+        }
+        #img4:hover{
+            width: 23vw;
+            height: 45vh;
+            transition: width 0.1s linear,height 0.1s linear;
+            cursor: pointer;
+
+        }
+        #content1{
+            display:none;
+            height: 45vh;
+            width:70vw;
+            border:2px solid red;
+            color: white;
+
+        }
+        #content2{
+            display: none;
+            height: 45vh;
+            width:70vw;
+            border:2px solid rgb(163, 27, 141)
+
+        }
+        #content3{
+            display: none;
+            height: 45vh;
+            width: 70vw;
+            border:2px solid rgb(68, 52, 158)
+
+        }
+        #content4{
+            display: none;
+            height: 45vh;
+            width: 70vw;
+            border:2px solid rgb(63, 172, 30)
+
+        }
+        .introduce{
+            width: 90%;
+            height: 45%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap:2vw;
+            
+
+        }
+        .person:hover{
+            box-shadow: 0 0 5px white, 0 0 10px white,0 0 15px wheat, 0 0 20px white;
+        }
+        .header{
+            font-style: italic;
+            position: absolute;
+            height: auto;
+            width: auto;
+            font-size:10vh ;
+            top: 3%;
+            color: white;
+
+        }
+        h1{
+            color: white;
+            font-size: 5vh;
+        }
+        span{
+            color: white;
+            font-size: 5vh;
+
+        }
+        .LOGO{
+            height: 20vh;
+            width: auto;
+            position:absolute;
+            bottom: 2%;
+            background-color: rgb(140, 129, 184,0.5);
+        left: 45%;
+
+        } .LOGO:hover{
+            cursor: pointer;
+            box-shadow: 0 0 5px palevioletred,0 0 10px plum ,0 0 15px purple;
+            border-radius: 10%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">小組成員</div>
+    <div class="introduce">
+    <div class="person" id="img1"></div>
+    <div class="content" id="content1"><h1>姓名:陳暘</h1><h1>工作分配:內容編輯與資料整理</h1><br><span>介紹:我的個性比較隨性，有時候會有選擇障礙，喜歡運動，打球游泳等等，也喜歡自己一個人廢在家，或者跟朋友出去玩</span></div> 
+     <div class="person" id="img2"></div>
+     <div class="content" id="content2"><h1>姓名:廖晨皓</h1><h1>工作分配:網頁排版與功能製作</h1><br><span>介紹:本人個性溫和，喜歡挑戰困難的事物，平時喜歡寫C++、彈鋼琴、泡咖啡</span></div> 
+    <div class="person" id="img3"></div>
+    <div class="content" id="content3"><h1>姓名:陳囿臻</h1><h1>工作分配:版面設計與程式編寫</h1><br><span>介紹:比起設計我比較擅長編寫程式，個性外向，負責監督整個網頁的執行狀況，興趣主要是聽音樂跟玩遊戲。</span></div> 
+    <div class="person" id="img4"></div> 
+    <div class="content" id="content4"><h1>姓名:彭尚文</h1><h1>工作分配:網頁美編與文書處理</h1><br><span>介紹:隨和溫和且過動 運動喜歡游泳跟籃球，平時喜歡到處吃美食，個人超愛旅遊。</span></div> 
+</div>
+<a href="../index.html"><img src="../PICTUE/LOGO1.png" class="LOGO"></a>
+    
+    
+</body>
+<script>
+    const person=document.querySelector('.person');
+    const img1=document.getElementById('img1');
+    const img2=document.getElementById('img2');
+    const img3=document.getElementById('img3');
+    const img4=document.getElementById('img4');
+    const content1=document.getElementById('content1');
+    const content2=document.getElementById('content2');
+    const content3=document.getElementById('content3');
+    const content4=document.getElementById('content4');
+    const LOGO=document.querySelector('.LOGO');
+    var display=0;
+    img1.addEventListener('click',function(){
+        if(display==0){
+            display=display+1
+       img2.style.display='none';
+       img3.style.display='none';
+       img4.style.display='none';
+       content1.style.display='block';
+    }
+       else if(display==1){
+        display=display-1
+        img2.style.display='block';
+        img3.style.display='block';
+        img4.style.display='block';
+        content1.style.display='none';
+     }
+
+    })
+    img2.addEventListener('click',function(){
+        if(display==0){
+            display=display+1
+       img1.style.display='none';
+       img3.style.display='none';
+       img4.style.display='none';
+       content2.style.display='block';
+    }
+       else if(display==1){
+        display=display-1
+        img1.style.display='block';
+        img3.style.display='block';
+        img4.style.display='block';
+        content2.style.display='none';
+     }
+    })
+     img3.addEventListener('click',function(){
+        if(display==0){
+            display=display+1
+       img1.style.display='none';
+       img2.style.display='none';
+       img4.style.display='none';
+       content3.style.display='block';
+    }
+       else if(display==1){
+        display=display-1
+        img1.style.display='block';
+        img2.style.display='block';
+        img4.style.display='block';
+        content3.style.display='none';
+     }
+
+    })
+    img4.addEventListener('click',function(){
+        if(display==0){
+            display=display+1
+       img1.style.display='none';
+       img2.style.display='none';
+       img3.style.display='none';
+       content4.style.display='block';
+    }
+       else if(display==1){
+        display=display-1
+        img1.style.display='block';
+        img2.style.display='block';
+        img3.style.display='block';
+        content4.style.display='none';
+     }
+
+    })
+   
+
+
+</script>
+</html>
