@@ -1,0 +1,10 @@
+.fontpage3{
+    background:linear-gradient(to bottom,rgb(71, 91, 145),rgb(115, 143, 204),rgb(180, 184, 197));
+    background-image: url(PICTUE/cc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 99vw;
+    display: flex;
+}
