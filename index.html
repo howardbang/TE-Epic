@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" type="text/css" href="commentstyle.css">
+    <link rel="stylesheet" type="text/css" href="fontpage.css">
+    <link rel="stylesheet" type="text/css" href="fontpage2.css">
+    <link rel="stylesheet" type="text/css" href="fontpage3.css">
+    <link rel="stylesheet" type="text/css" href="fontpage4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="fontpage1.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+        #body{
+            opacity: 1;
+            position: relative;
+            overflow-x: hidden;
+        }
+        #all{
+            background-color:black;
+            /* overflow: scroll; */
+            overflow-x: hidden;
+
+        }
+
+        .connectpage2{
+            width: 100%;
+            height: 10vh;
+            background:linear-gradient(rgb(150, 150, 150),rgb(0, 22, 22));
+        }
+        .connectpage3{
+            width: 100%;
+            height: 10vh;
+            background:linear-gradient(black,rgb(71, 65, 108),rgb(75, 68, 119),rgb(62, 53, 117),rgb(36, 29, 82),rgb(32, 20, 110));
+        }
+        .connectpage1{
+            width: 100%;
+            height: 10vh;
+            background:linear-gradient(rgb(15, 17, 17),rgb(15, 17, 17),rgb(47, 47, 62),rgb(18, 25, 29));
+            display: flex;
+            align-items: center;
+        }
+        .back{
+            position: fixed;
+            right: 0;
+            top: -100%;
+            width: 5vw;
+            height: auto;
+            transition: top 1s linear ;
+
+        }
+        .top{
+            text-align: center;
+            position: fixed;
+            border: 2px solid rgb(2, 2, 2);
+            right: 0.5%;
+            top: -100%;
+            background-color:aliceblue;
+            width: 4vw;
+            height: 5vh;
+            transition: top 1s linear ;
+            box-shadow: 0 0 5px black,0 0 10px black,0 0 .15px black;
+            font-size: 3vh;
+            border-radius: 10%;
+            
+        }
+        .top:hover{
+            background-color: rgb(111, 137, 161);
+            cursor: pointer;
+        }
+</style>
+</head>
+<body id="all">
+    <div id="body">
+    <div class="firstbackground">
+        <div class="item">
+            <span>你看過電子競技嗎</span>
+        </div>
+        <button class="nextpage">&#65088;</button>
+    </div>
+    <div class="secondbackground">
+        <video id="video-background" src="login-loop.mp4" autoplay muted loop></video>
+            <div class="item">
+                <span>你知道台灣拿過冠軍嗎</span>
+            </div>
+            <button class="nextpage2">&#12297;</button> 
+    </div>
+    <div class="thirdbackground">
+        <div class="item">
+            <span class =fire>讓我們重回輝煌</span>
+        </div>
+        <button class="nextpage3">&#65088;</button>
+    </div>
+    <div class="fontpage1" onmousemove="moveCircle(event)">
+        <div class="circle"></div>
+    </div>
+    <div class="group" id="icon1"><a href="其他資料/team.html"><img src="PICTUE/group.png"></a></div>
+    <div class="group" id="icon2"><img id='con2' src="PICTUE/favorite.png"></div>
+    <div class="group" id="icon3"><a href="網頁DATA.rar" download><img src="PICTUE/search.png"></div></a>
+    <div class="group" id="icon4"><img src="PICTUE/mail.png"></div>
+    <div class="group" id="icon5"><a href="其他資料/form.html"><img src="PICTUE/description.png"></div></a>
+    <img class="font1LOGO" src="PICTUE/LOGO1.png" >
+    <div class=fontheader>T E - E p i c</div>
+    <div class="connectpage1"></div>
+    <div class="fontpage2">
+        <div class="image"></div>
+        <div class="content">
+                <div class="item1">
+                    <div class="text">
+                        <div class="continue"><img src="PICTUE/LOL LOGO.png"><img src="PICTUE/_rush_.png"><img src="PICTUE/爐石 LOGO.png"><img src="PICTUE/LEGEND LOGO.png"></div>
+                    </div>
+                </div>
+                <div class="item2">
+                    <button id="fontlastpage">&#12296;</button>
+                    <div class="vedioblock">
+                        <div class="continue"><video src="login-loop.mp4" poster="PICTUE/TPA.png"  muted width="100%"  height="100%"></video><video src="login-loop.mp4" poster="PICTUE/NEAL.jpg" muted width="100%"  height="100%"></video><video src="login-loop.mp4" poster="PICTUE/TOM60229.png"  muted width="100%"  height="100%"></video><video src="login-loop.mp4" poster="PICTUE/傳說.png" muted width="100%"  height="100%"></video></div>                    
+                    </div>
+                    <button id="fontnextpage">&#12297;</button>
+                </div>
+                <div class="information">
+                    <button  id="font2button"><div class="material-symbols-outlined">search</div>了解詳情</button>
+                </div>
+            </div> 
+    </div>
+    <div class="connectpage2"></div>
+    <div class="fontpage3">
+        <h1>評論區</h1>
+        <h3>歡迎和我們分享你的看法與觀點</h3>
+        <br>
+        <form id="commentForm">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" required>
+            <br>
+            <br>
+            <label for="comment">留言：</label>
+            <textarea id="comment" required></textarea>
+            <br>
+            <br>
+            <button type="submit">發布評論</button>
+            <br>
+            <br>
+            <br>
+        </form>
+        <div id="comments">
+            <!-- 這裡將顯示留言 -->
+        </div>
+    </div>
+    <div class="connectpage3"></div>
+    <div class="fontpage4">
+        <img id="human" src="PICTUE/LOGOHUMAN.png" width="auto" height="80%">
+        <div class="font4content"><span> <br><strong>即使是曾經，也會留下痕跡</strong><br><br>台灣電競曾在不成熟的環境下，留下驚人的戰績<br> <br>如今也依舊在創造佳績<br> <br>我們的用意很簡單<br> <br>即使未來或現在台灣電競可能會有慘痛的失敗<br> <br>只要別忘了當初的熱血與感嘆<br> <br>我們相信這條電競的路上一定還會有人走下去<span></div>
+        <div class="font4header"><span>關於我們</span>
+        </div>
+        <div class="font4communicate">你看過電競比賽嗎？</div>
+    </div>
+    <image src="PICTUE/rope.png" class="back">
+    </image>
+    <div class="top">TOP</div>
+   
+    <div class="nav"></div>
+</div>
+    <div class=detail1>
+        <div class="header">T E－Epic</div>
+        <div class="item">T代表TAIWAN也就是台灣<br>E代表E－sport也就是電子競技<br> 最後的Epic有輝煌的意思<br>整個意思就是台灣電競輝煌</div>
+        <image src="PICTUE/LIGHT.png" class="image"></image>
+        <div class="button"> &#x2716;</div>
+    </div>
+<script src="script.js"></script>
+</body>
+<script>
+    const icon1=document.getElementById('icon1')
+    const icon2=document.getElementById('icon2')
+    const con2=document.getElementById('con2') 
+    const body=document.getElementById('body')
+    const all=document.getElementById('all')
+    const nextpage=document.querySelector('.nextpage')
+    const firstbackground=document.querySelector('.firstbackground')
+    const secondbackgroundtext=document.querySelector('.secondbackground .item')
+    const nextpage2=document.querySelector('.nextpage2')
+    const secondbackground=document.querySelector('.secondbackground')
+    const video=document.getElementById('video-background')
+    const nextpage3=document.querySelector('.nextpage3')
+    const thirdbackground=document.querySelector('.thirdbackground')
+    const thirdbackgroundtext=document.querySelector('.thirdbackground .item')
+    const fontpagenav=document.querySelector('.nav')
+    const fontpage1=document.querySelector('.fontpage1')
+    const fontheader1=document.querySelector('.fontheader')
+    const LOGO=document.querySelector('.font1LOGO')
+    const detail1=document.querySelector('.detail1')
+    const detail1button=document.querySelector('.detail1 .button')
+    var change=0;
+    const fontpage2=document.querySelector('.fontpage2')
+    const fontlastpage=document.getElementById('fontlastpage')
+    const fontnextpage=document.getElementById('fontnextpage')
+    const font2button=document.getElementById('font2button')
+    const font2textcontinue=document.querySelector('.fontpage2 .content .item1 .text .continue')
+    const font2vediocontinue=document.querySelector('.fontpage2 .content .item2 .vedioblock .continue')
+    var currentvediopage = parseFloat(window.getComputedStyle(font2vediocontinue).getPropertyValue('left'))/ font2vediocontinue.parentElement.clientWidth * 100; 
+    var currenttextpage = 300;
+    const font4communicate=document.querySelector('.font4communicate')
+    const back=document.querySelector('.back')
+    const backtop=document.querySelector('.top')
+
+
+  
+    
+    icon2.addEventListener('click',function(){
+        if(con2.src.includes('favorite.png')){
+            con2.src='PICTUE/favoriteLOVE.png'
+        }
+        else if(con2.src.includes('favoriteLOVE.png')){
+            con2.src='PICTUE/favorite.png'
+
+        }
+        
+    })
+//偵測滾動距離
+window.addEventListener('scroll', function() {
+  
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  if(scrollPosition>=200){
+    back.style.top='0%'
+    backtop.style.top='78%'
+  }
+  else{
+    back.style.top='-100%'
+    backtop.style.top='-100%'
+  } 
+});
+    backtop.addEventListener('click',function(){
+        window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
+    })
+
+    function delayfont1animation(){
+        fontheader1.style.animationPlayState='running'
+        LOGO.style.animationPlayState='running'
+        fontpage1.style.animationPlayState='running'
+        fontpage2.style.display='flex'
+    
+    }
+
+    nextpage.addEventListener('click' ,function(){
+        firstbackground.style.top='-102%'
+        secondbackgroundtext.style.animationPlayState='running';
+    })
+    nextpage2.addEventListener('click' ,function(){
+        secondbackground.style.left='-100%'
+        video.style.left='-100%'
+        thirdbackgroundtext.style.animationPlayState='running';
+        thirdbackground.style.animationPlayState='running';
+        nextpage2.style.left='-100%'
+        secondbackgroundtext.style.left='-100%'
+        
+    })
+    nextpage3.addEventListener('click' ,function(){
+        thirdbackground.style.top='-102%'
+         setTimeout(delayfont1animation,1000);
+    })
+
+
+    LOGO.addEventListener('mouseenter',function(){
+        if(LOGO.src = '表情2.png'){
+            LOGO.src = 'PICTUE/LOGO1.png'
+        }
+        else{
+            return;
+        }
+        
+    })
+    LOGO.addEventListener('mouseleave',function(){
+        if(LOGO.src='LOGO.png'){
+            LOGO.src='PICTUE/微笑.png';
+        }
+        
+    })
+    function LOGOchange1(){
+        if(LOGO.src = 'LOGO1.png'){
+            LOGO.src='PICTUE/微笑.png';
+        }
+    }
+    function LOGOchange2(){
+        if(LOGO.src = '微笑.png'){
+            LOGO.src='PICTUE/LOGO1.png';
+        }
+    }
+    setInterval(LOGOchange1,5000);
+    setInterval(LOGOchange2,10000);
+
+    fontheader1.addEventListener('click',function(){
+        all.style.overflow='hidden';
+        body.style.opacity=0.5;
+        all.style.backgroundColor='white';
+        detail1.style.display='flex'
+
+
+    })
+    detail1button.addEventListener('click',function(){
+        all.style.overflow='scroll';
+        body.style.opacity=1;
+        all.style.backgroundColor='black';
+        detail1.style.display='none'
+
+    })
+
+    fontlastpage.addEventListener('click' ,function(){
+        
+        font2textcontinue.style.left=currenttextpage+100+'%'
+        font2vediocontinue.style.left=currentvediopage+100+'%';
+        currentvediopage=currentvediopage+100;
+        currenttextpage=currenttextpage+100;
+        if(currentvediopage==0){
+        fontlastpage.style.display='none'}
+        if(currentvediopage>-300){
+            fontnextpage.style.display='block'
+        }
+
+    })
+    fontnextpage.addEventListener('click' ,function(){
+        font2textcontinue.style.left=currenttextpage-100+'%'
+        font2vediocontinue.style.left=currentvediopage-100+'%';
+        currentvediopage=currentvediopage-100;
+        currenttextpage=currenttextpage-100;
+        if(currentvediopage==-300){
+        fontnextpage.style.display='none'}
+        if(currentvediopage<0){
+            fontlastpage.style.display='block'
+        }
+    })
+    font2button.addEventListener('click',function(){
+        if(currenttextpage==300){
+            var url='英雄聯盟/index.html'
+        }
+        else if(currenttextpage==200){
+            var url='跑跑卡丁車/index.html'
+
+        }
+        else if(currenttextpage==100){
+            var url='爐石戰記/index.html'
+        }
+        else if(currenttextpage==0){
+            var url='傳說對決/index.html'
+        }
+        window.location.href = url;
+    })
+ 
+        // 當全景面板被點擊時觸發的函式
+        function handleClick(event) {
+      // 檢查是否已經有超過5個正方形，若是則不執行以下程式碼
+      if (fontpage1.querySelectorAll('.square').length >= 5) {
+        return;
+      }
+
+      // 創建一個新的正方形元素
+      var square = document.createElement('div');
+      square.className = 'square';
+
+        // 創建一個新的正方形子元素
+        var squareItem = document.createElement('div');
+      squareItem.className = 'squareitem';
+
+      // 設置正方形元素的位置為點擊位置的中心
+      var squareSize = 100; // 正方形的尺寸
+      var x = event.clientX - squareSize / 2;
+      var y = event.clientY - squareSize / 2;
+      square.style.left = x + 'px';
+      square.style.top = y + 'px';
+
+   
+
+      // 將正方形元素添加到全景面板中
+      
+      fontpage1.appendChild(square);
+      square.appendChild(squareItem);
+         // 將正方形元素添加到全景面板中
+
+
+      // 設置定時器，在2秒後將正方形元素從全景面板中移除
+      setTimeout(function() {
+        fontpage1.removeChild(square);
+      }, 5000);
+    }
+
+    // 將點擊事件綁定到全景面板
+    fontpage1.addEventListener('click', handleClick);
+
+    function moveCircle(event) {
+        var x = event.clientX;
+        var y = event.clientY;
+        var circle = document.querySelector('.circle');
+        circle.style.left = x - 25 + 'px';  // 調整圓心位置，減去半徑的一半
+        circle.style.top = y - 25 + 'px';}
+
+        function restartAnimation() {
+  font4communicate.style.animation='none'
+  void font4communicate.offsetWidth; // 強制重繪
+  if(font4communicate.textContent=='你看過電競比賽嗎？'){
+    font4communicate.textContent='你或許該看看．．．'
+  }
+ else if(font4communicate.textContent=='你或許該看看．．．'){
+    font4communicate.textContent='你喜歡什麼類型的遊戲？'
+  }
+ else if(font4communicate.textContent=='你喜歡什麼類型的遊戲？'){
+    font4communicate.textContent='我偏好競技型的遊戲'
+  }
+ else if(font4communicate.textContent=='我偏好競技型的遊戲'){
+    font4communicate.textContent='好想玩遊戲～'
+  }
+ else if(font4communicate.textContent=='好想玩遊戲～'){
+    font4communicate.textContent='诶！你要不要跟我對打看看'
+  }
+ else if(font4communicate.textContent=='诶！你要不要跟我對打看看'){
+    font4communicate.textContent='你看過電競比賽嗎？'
+  }
+
+  
+  font4communicate.style.animation=null;
+}
+
+setInterval(restartAnimation, 8000);
+
+function talking(){
+    if(font4communicate.src.inclufe(HUMANLOGO.png)){
+        font4communicate.src='PICTUE/HUMANLOGO2'
+    }
+    else if(font4communicate.src.inclufe(HUMANLOGO2.png)){
+        font4communicate.src='PICTUE/HUMANLOGO2'
+    }
+
+}
+function repeatFunction(func, times, delay) {
+  if (times > 0) {
+    func();
+    setTimeout(function() {
+      repeatFunction(func, times - 1, delay);
+    }, delay * 1000);
+  }
+}
+function loop(){
+    repeatFunction(talking, 8, 0.5);
+    setTimeout(loop,4000);
+}
+ 
+loop();    
+</script>
+</html>
