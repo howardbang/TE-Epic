@@ -4,62 +4,424 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="style2.css">
-    <link rel="stylesheet" type="text/css" href="style3.css">
-    <link rel="stylesheet" type="text/css" href="commentstyle.css">
-    <link rel="stylesheet" type="text/css" href="fontpage.css">
-    <link rel="stylesheet" type="text/css" href="fontpage2.css">
-    <link rel="stylesheet" type="text/css" href="fontpage3.css">
-    <link rel="stylesheet" type="text/css" href="fontpage4.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <script src="fontpage1.js"></script>
     <title>Document</title>
     <style>
         *{
             margin: 0;
             padding: 0;
-            box-sizing: 0;
+            
         }
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 700,
-  'GRAD' 0,
-  'opsz' 48
-}
+        body{
+            overflow-x: hidden;
+        }
+        .page1{
+            width: 100vw;
+            height: 200vh;
+            background-color: aquamarine;
+            overflow: hidden;
+            background-image: url(../PICTUE/召喚峽谷.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
 
-        #body{
-            opacity: 1;
+        }
+        .page1 .header{
             position: relative;
-            overflow-x: hidden;
+            border: 2px solid transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20vh;
+            width: 30vw;
+            background-image: url(英雄聯盟.png);
+            left: 35%;
+            top:10vw;
+       
         }
-        #all{
-            background-color:black;
-            /* overflow: scroll; */
-            overflow-x: hidden;
-
-        }
-
-        .connectpage2{
-            width: 100%;
-            height: 10vh;
-            background:linear-gradient(rgb(150, 150, 150),rgb(0, 22, 22));
-        }
-        .connectpage3{
-            width: 100%;
-            height: 10vh;
-            background:linear-gradient(black,rgb(71, 65, 108),rgb(75, 68, 119),rgb(62, 53, 117),rgb(36, 29, 82),rgb(32, 20, 110));
-        }
-        .connectpage1{
-            width: 100%;
-            height: 10vh;
-            background:linear-gradient(rgb(15, 17, 17),rgb(15, 17, 17),rgb(47, 47, 62),rgb(18, 25, 29));
+        .page1 .content{
+            position: absolute;
+            border:2px solid transparent;
+            width: 40vw;
+            height: 60vh;
+            top:100%;
+            left: 55%;  
+            animation: 2s fade-in-animation linear ;
             display: flex;
             align-items: center;
+            box-shadow: 2px 2px 10px white,2px 2px 15px white,2px 2px 20px wheat;
+            background-color: rgb(131, 119, 98,0.5);
+            
+           
+        
+
+        }
+        .page1 .introduce{
+            position: absolute;
+            border:2px solid transparent;
+            width: 40vw;
+            height: 60vh;
+            top:100%;
+            left: 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 10vh;
+            background-color: rgba(0, 0, 0, 0.5); 
+            border-radius:10% ; 
+
+        }
+        .introduce .item1{
+            color:white;
+            width: 100%;
+            text-align: center;
+            height: auto;
+            font-size: 8vh;
+            font-style: italic;
+
+        }
+        .introduce .item2{
+            color: white;
+            text-align: center;
+            font-size:3vh;
+            
+
+}
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+        .page2{
+            width: 100vw;
+            height: 100vh;
+            background:linear-gradient(to bottom,rgb(11, 63, 43),rgb(26, 114, 126),rgb(55, 80, 109));
+            position: relative;
+           
+
+        }
+        .page2 .timetable{
+            width: 100%;
+
+        }
+        .page2line{
+        
+            width: 100VW;
+            height: 6px;
+            border-radius: 50%;
+            position:absolute;
+            background-color: blue;
+            top: 80%;
+            border: 2px solid black;
+            
+        }
+        .page2content{
+            width: 80%;
+            height: 70%;
+            position:absolute;
+            background-color: transparent;
+            left: 10%;
+            top:5%;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .page2content .item1{
+            height: 100%;
+            width: 50%;
+            background-color: transparent;
+
+        }
+        .page2content .item2{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            background-color:transparent;
+
+        }
+        .item2 .LOLteam{
+            width: 100%;
+            height: 50%;
+            background-color:transparent;
+        }
+        .item2 .introduce{
+            width: 100%;
+            height: 50%;
+            background-color: wheat;
+            font-size: 5vh;
+            display: flex;
+            justify-content: center;
+        }
+        #team1back{
+            background-image: url(TPA\ WIN1.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #team2back{
+            background-image: url(team-FW.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #team3back{
+            background-image: url(AHQ.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #team4back{
+            background-image: url(BYG.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #page2team1{
+            display: none;
+
+        }
+        #page2team2{
+            display: none;
+            
+        }
+        #page2team3{
+            display: none;
+            
+        }
+        #page2team4{
+            display: none;
+            
+        }
+        #page2dot1{
+        left: 20%;
+    }
+    #page2dot2{
+        left: 40%;
+    }
+    #page2dot3{
+        left: 60%;
+    }
+    #page2dot4{
+        left: 80%; 
+    }
+    #page2dot1:hover{
+        cursor: pointer;
+        background-color: rgb(120, 117, 117);
+    
+    }
+    #page2dot2:hover{
+        cursor: pointer;
+        background-color: rgb(120, 117, 117);
+    }
+    #page2dot3:hover{
+        cursor: pointer;
+        background-color: rgb(120, 117, 117);
+    }
+    #page2dot4:hover{
+        cursor: pointer;
+        background-color: rgb(120, 117, 117);
+    }
+    .dot{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        top: 78%;
+        box-shadow: 0 0 10px black;
+    }
+        .page3{
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            background-image: url(page3.png);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        
+            
+        }
+        .page3content{
+            border:3px solid transparent;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8vw;
+            position: relative;
+            left: 90%;
+            transition: left 0.1s linear;
+
+
+        }
+        #page2back{
+            background-image: url(page2.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15vh;
+            border-radius: 5%;
+            text-shadow: 0 0 10px black,0 0 20px black,0 0 30px black;
+            box-shadow: 0 0 5px black,0 0 10px black,0 0 15px black,0 0 20px black;
+
+        }
+        .page3header{
+            width: auto;
+            height: auto;
+            position:absolute;
+            font-size: 15vh;
+            top: 0;
+            text-shadow: 0 0 10px white,0 0 15px white,0 0 20px wheat;
+            font-style:italic;
+        }
+        .page3main{
+            height: auto;
+            width: 33%;
+            border: 2px solid black;
+            transition: width 0.1s linear,height,0.1s linear;
+
+        }
+        .page3second{
+            height: 40%;
+            width: 25%;
+            border: 2px solid black;
+            opacity: 0.3;
+            transition: height 0.1s linear,width 0.1s linear,opacity 0.1s linear;
+
+        }
+        .page3button{
+            position: absolute;
+            height: 6vh;
+            width: 3vw;
+            background-color: transparent;
+            border-radius: 50%;
+            color: rgb(255, 255, 255);
+            font-size: 7vh;
+            text-align: center;
+            border-color: transparent;
+        }.page3button:hover{
+
+            color:rgb(102, 102, 98);
+            cursor: pointer;
+          
+        }
+        #next{
+            left: 90%;
+        }  
+        #last{
+            left: 1%;
+        }
+        .page4{
+            width: 100vw;
+            height: 100vh;
+            background-color: burlywood;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+      
+        .menu{
+            font-size: 5vh;
+            position: relative;
+            width: auto;
+            height: auto;
+            top: 0%;
+            left: 0;
+            
+        }
+        .page4header{
+            font-style: italic;
+            width: auto;
+            height: auto;
+            font-size: 10vh;
+            position: absolute;
+            left: 33%;
+            top: 0;
+
+
+        }
+        .page4content{
+            width: 80%;
+            height: 80%;
+            position: relative;
+            border: 2px solid transparent;
+            top:5%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            column-gap: 6vh;
+        }
+        .page4content .item{
+            width: 30%;
+            height: 45%;
+            background-color: beige;
+            position: relative;
+            box-shadow: 2px 2px 5px black,2px 2px 10px black,2px 2px 15px rgb(83, 83, 83);
+        }
+        .page4content .item:hover{
+            transform: translateY(-1vh);
+            cursor: pointer;
+            
+        }
+        .nav{
+            position: fixed;
+            width: 2.5vw;
+            height: 5vh;
+            top: 0;
+            border: 5px solid black;
+            overflow: hidden;
+            display: flex;
+            background-color: aliceblue;
+            align-items: center;
+            font-size: 5vh;
+            transition: width 0.5s linear,height 0.5s linear;
+        }
+        .nav:hover{
+            cursor: pointer;
+
+        }
+        .navLOGO{
+            margin-left: 5vh;
+        }
+        .navLOGO:hover{
+            cursor: pointer;
+            background-color: rgb(123, 125, 126);
+        }
+        .navitem{
+            position: relative;
+            border: 2px solid black;
+            width: auto;
+            height: 90%;
+            margin-left: 2vw;
+        }
+        #nav1{
+            background-color: rgb(165, 168, 170);
+        }
+        #nav2:hover{
+            background-color: rgb(165, 168, 170);
+            cursor: pointer;
+        }
+        #nav3:hover{
+            background-color: rgb(165, 168, 170);
+            cursor: pointer;
+        }
+        #nav4:hover{
+            background-color: rgb(165, 168, 170);
+            cursor: pointer;
         }
         .back{
             position: fixed;
@@ -89,152 +451,255 @@
             background-color: rgb(111, 137, 161);
             cursor: pointer;
         }
-</style>
+
+
+    </style>
 </head>
-<body id="all">
-    <div id="body">
-    <div class="firstbackground">
-        <div class="item">
-            <span>你看過電子競技嗎</span>
+<body>
+    <div class="page1">
+        <div class="header"></div>
+        <div class="introduce">
+            <div class="item1"> 遊戲介紹</div>
+            <div class="item2">英雄聯盟是一款MOBA類型的遊戲<br>你將選擇一隻英雄與其他四位隊友共同奮戰<br>對付其他五名玩家，將對方的主堡推掉即可勝利</div>
+    </div>
+        <div class="content"><image id="image" src="PICTURE1.jpg" width=100%></image></div>
+    </div>
+    <div class="page2"><div class=page2line>
+    </div>
+    <div id="page2dot1" class="dot"></div>
+    <div id="page2dot2" class="dot"></div>
+    <div id="page2dot3" class="dot"></div>
+    <div id="page2dot4" class="dot"></div>
+    <div class="page2content" id="page2back">經典賽事</div>
+    <div class="page2content" id="page2team1">
+        <div class="item1">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ihaZK48a9Lw" title="S2 TPA vs. AZF 世界冠軍賽!~精彩回顧" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <button class="nextpage">&#65088;</button>
-    </div>
-    <div class="secondbackground">
-        <video id="video-background" src="login-loop.mp4" autoplay muted loop></video>
-            <div class="item">
-                <span>你知道台灣拿過冠軍嗎</span>
-            </div>
-            <button class="nextpage2">&#12297;</button> 
-    </div>
-    <div class="thirdbackground">
-        <div class="item">
-            <span class =fire>讓我們重回輝煌</span>
-        </div>
-        <button class="nextpage3">&#65088;</button>
-    </div>
-    <div class="fontpage1" onmousemove="moveCircle(event)">
-        <div class="circle"></div>
-    </div>
-    <div class="group" id="icon1"><a href="其他資料/team.html"><img src="PICTUE/group.png"></a></div>
-    <div class="group" id="icon2"><img id='con2' src="PICTUE/favorite.png"></div>
-    <div class="group" id="icon3"><a href="網頁DATA.rar" download><img src="PICTUE/search.png"></div></a>
-    <div class="group" id="icon4"><img src="PICTUE/mail.png"></div>
-    <div class="group" id="icon5"><a href="其他資料/form.html"><img src="PICTUE/description.png"></div></a>
-    <img class="font1LOGO" src="PICTUE/LOGO1.png" >
-    <div class=fontheader>T E - E p i c</div>
-    <div class="connectpage1"></div>
-    <div class="fontpage2">
-        <div class="image"></div>
-        <div class="content">
-                <div class="item1">
-                    <div class="text">
-                        <div class="continue"><img src="PICTUE/LOL LOGO.png"><img src="PICTUE/_rush_.png"><img src="PICTUE/爐石 LOGO.png"><img src="PICTUE/LEGEND LOGO.png"></div>
-                    </div>
-                </div>
-                <div class="item2">
-                    <button id="fontlastpage">&#12296;</button>
-                    <div class="vedioblock">
-                        <div class="continue"><video src="login-loop.mp4" poster="PICTUE/TPA.png"  muted width="100%"  height="100%"></video><video src="login-loop.mp4" poster="PICTUE/NEAL.jpg" muted width="100%"  height="100%"></video><video src="login-loop.mp4" poster="PICTUE/TOM60229.png"  muted width="100%"  height="100%"></video><video src="login-loop.mp4" poster="PICTUE/傳說.png" muted width="100%"  height="100%"></video></div>                    
-                    </div>
-                    <button id="fontnextpage">&#12297;</button>
-                </div>
-                <div class="information">
-                    <button  id="font2button"><div class="material-symbols-outlined">search</div>了解詳情</button>
-                </div>
-            </div> 
-    </div>
-    <div class="connectpage2"></div>
-    <div class="fontpage3">
-        <h1>評論區</h1>
-        <h3>歡迎和我們分享你的看法與觀點</h3>
-        <br>
-        <form id="commentForm">
-            <label for="name">姓名：</label>
-            <input type="text" id="name" required>
-            <br>
-            <br>
-            <label for="comment">留言：</label>
-            <textarea id="comment" required></textarea>
-            <br>
-            <br>
-            <button type="submit">發布評論</button>
-            <br>
-            <br>
-            <br>
-        </form>
-        <div id="comments">
-            <!-- 這裡將顯示留言 -->
+        <div class="item2">
+            <div class="LOLteam" id="team1back"></div>
+            <div class="introduce">隊名：TPA_全名為Taipei-Assassins<br> 於2012年10月14日拿下英雄聯盟Season2第二季世界錦標賽<br>成員：Mistake、Stanely、Toyz、Bebe、Lilballz</div>
         </div>
     </div>
-    <div class="connectpage3"></div>
-    <div class="fontpage4">
-        <img id="human" src="PICTUE/LOGOHUMAN.png" width="auto" height="80%">
-        <div class="font4content"><span> <br><strong>即使是曾經，也會留下痕跡</strong><br><br>台灣電競曾在不成熟的環境下，留下驚人的戰績<br> <br>如今也依舊在創造佳績<br> <br>我們的用意很簡單<br> <br>即使未來或現在台灣電競可能會有慘痛的失敗<br> <br>只要別忘了當初的熱血與感嘆<br> <br>我們相信這條電競的路上一定還會有人走下去<span></div>
-        <div class="font4header"><span>關於我們</span>
+    <div class="page2content" id="page2team2">
+        <div class="item1">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xlhvC_u8Z_k" title="SKT vs FW 電狼覺醒完美碾壓SKT！| 《LOL》2016 世界大賽 | 16強小組賽 W1D4 精華 Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <div class="font4communicate">你看過電競比賽嗎？</div>
+        <div class="item2">
+            <div class="LOLteam" id="team2back"></div>
+            <div class="introduce">隊名：FW_全名為Flash-wolf<br> 於英雄聯盟2016賽季全球16強小組賽中壓制三冠王Faker<br>成員：MMD、Karsa、Maple、NL、SwortArt</div>
+        </div>
     </div>
-    <image src="PICTUE/rope.png" class="back">
+    <div class="page2content" id="page2team3">
+        <div class="item1">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8bNu7LZ2MaU" title="AHQ vs SKT LMS打架王史詩級弒神之役！西門鎖飛斯全場沸騰！ | 2017 世界大賽小組賽 W2D4 精華 Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="item2">
+            <div class="LOLteam" id="team3back"></div>
+            <div class="introduce">隊名：AHq_全名為ahqe-SportsClub<br> 於英雄聯盟2017世界大賽小組賽中擊敗連冠隊伍SKT<br>成員：Ziv、mountain、westdoor、AN、Albis</div>
+        </div>
+    </div>
+    <div class="page2content" id="page2team4">
+        <div class="item1">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bOVVrJ_Oeq8" title="HLE vs BYG | Chovy Esports vs Doggo Gaming！PK做夢都沒想到要打Chovy！Game 1 | 入圍賽Bo5 | 2021 S11世界賽精華" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="item2">
+            <div class="LOLteam" id="team4back"></div>
+            <div class="introduce">隊名：BYG_全名為Beyond-Gaming <br> 於英雄聯盟2021世界大賽中對上奪冠熱門選手Chovy<br>成員：Liang、Husha、PK、Doggo、Kino</div>
+        </div>
+    </div>
+</div>
+    <div class="page3">
+        <div class="page3header">熱門選手</div>
+        <div class="page3content">
+            <image src="TOYZ.jpeg"id=1 class="page3main" width="200px" height="auto"></image>
+            <image src="LIANG.jpeg"id=2 class="page3second"></image>
+            <image src="ZIV.jpg"id=3 class="page3second"></image>
+            <image src="STANELY.jpeg"id=4 class="page3second"></image>
+            <image src="Maple.jpg"id=5 class="page3second"></image>
+            <image src="Karsa.jpeg"id=6 class="page3second"></image>
+            <image src="BEBE.jpg"id=7 class="page3second"></image>
+        </div>
+        <button class="page3button" id="last">&#12296;</button>
+        <button class="page3button" id="next">&#12297;</button>
+    </div>
+    <div class="page4">
+        <div class="page4header">更多內容發現</div>
+        <div class="page4content">
+            <div class="item" id="connect1"><img src="LOLfacebook.png" alt="" width="100%" height=100%></img></div>
+            <div class="item"id="connect2"><img src="LOLIG.png" width="100%" height="100%"></div>
+            <div class="item"id="connect3"><img src="LOLTwitter.png" width="100%" height="100%"></div>
+            <div class="item"id="connect4"><img src="LOL電競官網.png" width="100%" height="100%"></div>
+            <div class="item"id="connect5"><img src="LOL電競賽事.png" width="100%" height="100%"></div>
+            <div class="item"id="connect6"><img src="巴哈.png" width="100%" height="100%"></div>
+
+        </div>
+        
+    </div>
+    <div class="nav">
+    <div class="menu">☰</div>
+    <a href="../index.html"><img src="../PICTUE/LOGO1.png" height="100vh" class="navLOGO" ></a>
+    <div class="navitem" id="nav1" ><img src="../PICTUE/LOL LOGO.png" height="100vh"></div>
+    <a href="../傳說對決/index.html"><div class="navitem"id="nav2"><img src="../PICTUE/LEGEND LOGO.png" height="100vh"></div></a>
+    <a href="../跑跑卡丁車/index.html"><div class="navitem" id="nav3"><img src="../PICTUE/_rush_.png" height="100vh"></div></a>
+    <a href="../爐石戰記/index.html"> <div class="navitem" id="nav4"> <img src="../PICTUE/爐石 LOGO.png" height="100vh"></div></a>
+    </div>
+    <image src="../PICTUE/rope.png  " class="back">
     </image>
     <div class="top">TOP</div>
-   
-    <div class="nav"></div>
-</div>
-    <div class=detail1>
-        <div class="header">T E－Epic</div>
-        <div class="item">T代表TAIWAN也就是台灣<br>E代表E－sport也就是電子競技<br> 最後的Epic有輝煌的意思<br>整個意思就是台灣電競輝煌</div>
-        <image src="PICTUE/LIGHT.png" class="image"></image>
-        <div class="button"> &#x2716;</div>
-    </div>
-<script src="script.js"></script>
+    
 </body>
 <script>
-    const icon1=document.getElementById('icon1')
-    const icon2=document.getElementById('icon2')
-    const con2=document.getElementById('con2') 
-    const body=document.getElementById('body')
-    const all=document.getElementById('all')
-    const nextpage=document.querySelector('.nextpage')
-    const firstbackground=document.querySelector('.firstbackground')
-    const secondbackgroundtext=document.querySelector('.secondbackground .item')
-    const nextpage2=document.querySelector('.nextpage2')
-    const secondbackground=document.querySelector('.secondbackground')
-    const video=document.getElementById('video-background')
-    const nextpage3=document.querySelector('.nextpage3')
-    const thirdbackground=document.querySelector('.thirdbackground')
-    const thirdbackgroundtext=document.querySelector('.thirdbackground .item')
-    const fontpagenav=document.querySelector('.nav')
-    const fontpage1=document.querySelector('.fontpage1')
-    const fontheader1=document.querySelector('.fontheader')
-    const LOGO=document.querySelector('.font1LOGO')
-    const detail1=document.querySelector('.detail1')
-    const detail1button=document.querySelector('.detail1 .button')
-    var change=0;
-    const fontpage2=document.querySelector('.fontpage2')
-    const fontlastpage=document.getElementById('fontlastpage')
-    const fontnextpage=document.getElementById('fontnextpage')
-    const font2button=document.getElementById('font2button')
-    const font2textcontinue=document.querySelector('.fontpage2 .content .item1 .text .continue')
-    const font2vediocontinue=document.querySelector('.fontpage2 .content .item2 .vedioblock .continue')
-    var currentvediopage = parseFloat(window.getComputedStyle(font2vediocontinue).getPropertyValue('left'))/ font2vediocontinue.parentElement.clientWidth * 100; 
-    var currenttextpage = 300;
-    const font4communicate=document.querySelector('.font4communicate')
     const back=document.querySelector('.back')
     const backtop=document.querySelector('.top')
 
-
+    const page1content=document.querySelector('.page1 .content')
+    const page1image=document.getElementById('image')
+    const page2team1=document.getElementById('page2team1')
+    const page2team2=document.getElementById('page2team2')
+    const page2team3=document.getElementById('page2team3')
+    const page2team4=document.getElementById('page2team4')
+    const page2dot1=document.getElementById('page2dot1')
+    const page2dot2=document.getElementById('page2dot2')
+    const page2dot3=document.getElementById('page2dot3')
+    const page2dot4=document.getElementById('page2dot4')
+    const page3content=document.querySelector('.page3content')
+    var currentid=1;
+    var celebrity=document.getElementById(currentid)
+    const nextbutton=document.getElementById('next')
+    const lastbutton=document.getElementById('last')
+    var currentpage=90;
+    const connect1=document.getElementById('connect1')
+    const connect2=document.getElementById('connect2')
+    const connect3=document.getElementById('connect3')
+    const connect4=document.getElementById('connect4')
+    const connect5=document.getElementById('connect5')
+    const connect6=document.getElementById('connect6')
+    const nav=document.querySelector('.nav')
+    const menu=document.querySelector('.menu')
+    const navLOGO=document.querySelector('.navLOGO')
+    const nav1=document.getElementById('nav1')
+    const nav2=document.getElementById('nav2')
+    const nav3=document.getElementById('nav3')
   
-    
-    icon2.addEventListener('click',function(){
-        if(con2.src.includes('favorite.png')){
-            con2.src='PICTUE/favoriteLOVE.png'
+    function imagechange(){
+        page1content.style.animation="none"
+        void page1content.offsetWidth;
+        if(page1image.src.includes('PICTURE1.jpg')){
+            page1image.src='PICTURE3.jpg'
         }
-        else if(con2.src.includes('favoriteLOVE.png')){
-            con2.src='PICTUE/favorite.png'
+       else if(page1image.src.includes('PICTURE3.jpg')){
+        page1image.src='PICTURE2.png'
+        }
+       else if(page1image.src.includes('PICTURE2.png')){
+        page1image.src='PICTURE1.jpg'
+
+    }
+    page1content.style.animation=null
+}
+    setInterval(imagechange,7000)
+
+    page2dot1.addEventListener('click',function(){
+        page2team1.style.display='flex';
+        page2team2.style.display='none';
+        page2team3.style.display='none';
+        page2team4.style.display='none';
+        page2dot1.style.backgroundColor='gray'
+        page2dot2.style.backgroundColor='white'
+        page2dot3.style.backgroundColor='white'
+        page2dot4.style.backgroundColor='white'
+    })
+    page2dot2.addEventListener('click',function(){
+        page2team1.style.display='none';
+        page2team2.style.display='flex';
+        page2team3.style.display='none';
+        page2team4.style.display='none';
+        page2dot2.style.backgroundColor='gray'
+        page2dot1.style.backgroundColor='white'
+        page2dot3.style.backgroundColor='white'
+        page2dot4.style.backgroundColor='white'
+    })
+    page2dot3.addEventListener('click',function(){
+        page2team1.style.display='none';
+        page2team2.style.display='none';
+        page2team3.style.display='flex';
+        page2team4.style.display='none';
+        page2dot3.style.backgroundColor='gray'
+        page2dot2.style.backgroundColor='white'
+        page2dot4.style.backgroundColor='white'
+        page2dot1.style.backgroundColor='white'
+    })
+    page2dot4.addEventListener('click',function(){
+        page2team1.style.display='none';
+        page2team2.style.display='none';
+        page2team3.style.display='none';
+        page2team4.style.display='flex';
+        page2dot4.style.backgroundColor='gray'
+        page2dot2.style.backgroundColor='white'
+        page2dot3.style.backgroundColor='white'
+        page2dot1.style.backgroundColor='white'
+    })
+    nextbutton.addEventListener('click',function(){
+        if(currentpage>-90){
+            currentpage=currentpage-30;
+            celebrity.classList.remove("page3main")
+            celebrity.classList.add("page3second")
+            currentid=currentid+1;
+            celebrity=document.getElementById(currentid);
+            celebrity.classList.remove("page3second")
+            celebrity.classList.add("page3main")
+            page3content.style.left=currentpage+'%'
+        }
+
+          
+    })
+    lastbutton.addEventListener('click',function(){
+        if(currentpage<90){
+            currentpage=currentpage+30;
+            celebrity.classList.remove("page3main")
+            celebrity.classList.add("page3second")
+            currentid=currentid-1;
+            celebrity=document.getElementById(currentid);
+            celebrity.classList.remove("page3second")
+            celebrity.classList.add("page3main")
+            page3content.style.left=currentpage+'%'}
+
+          
+    })
+    connect1.addEventListener('click',function(){
+        window.location.href = 'https://www.facebook.com/leagueoflegendstw/';
+    })
+    connect2.addEventListener('click',function(){
+        window.location.href = 'https://www.instagram.com/leagueoflegendstw/';
+    })
+    connect3.addEventListener('click',function(){
+        window.location.href = 'https://twitter.com/riotgames';
+    })
+    connect4.addEventListener('click',function(){
+        window.location.href = 'https://www.leagueoflegends.com/zh-tw/news/esports/?_gl=1*1517a40*_ga*NjgzMDYzMzQwLjE2ODUwODAwOTk.*_ga_FXBJE5DEDD*MTY4NjUxMDE2Mi4xNC4wLjE2ODY1MTAxNjIuNjAuMC4w&_ga=2.144000370.678514733.1686507930-683063340.1685080099';
+    })
+    connect5.addEventListener('click',function(){
+        window.location.href = 'https://www.youtube.com/@lolesports';
+    })
+    connect6.addEventListener('click',function(){
+        window.location.href = 'https://forum.gamer.com.tw/B.php?bsn=17532&subbsn=3';
+    })
+    menu.addEventListener('click',function(){
+        if(menu.textContent=='☰'){
+            menu.textContent='☲'
+            nav.style.width='100vw'
+            nav.style.height='10vh'
+
 
         }
-        
+        else if(menu.textContent=='☲'){
+            menu.textContent='☰'
+            nav.style.width='2.5vw'
+            nav.style.height='5vh'
+        }
     })
+    
+    
+
 //偵測滾動距離
 window.addEventListener('scroll', function() {
   
@@ -254,217 +719,7 @@ window.addEventListener('scroll', function() {
     behavior: 'smooth'
   });
 
-    })
-
-    function delayfont1animation(){
-        fontheader1.style.animationPlayState='running'
-        LOGO.style.animationPlayState='running'
-        fontpage1.style.animationPlayState='running'
-        fontpage2.style.display='flex'
+    })       
     
-    }
-
-    nextpage.addEventListener('click' ,function(){
-        firstbackground.style.top='-102%'
-        secondbackgroundtext.style.animationPlayState='running';
-    })
-    nextpage2.addEventListener('click' ,function(){
-        secondbackground.style.left='-100%'
-        video.style.left='-100%'
-        thirdbackgroundtext.style.animationPlayState='running';
-        thirdbackground.style.animationPlayState='running';
-        nextpage2.style.left='-100%'
-        secondbackgroundtext.style.left='-100%'
-        
-    })
-    nextpage3.addEventListener('click' ,function(){
-        thirdbackground.style.top='-102%'
-         setTimeout(delayfont1animation,1000);
-    })
-
-
-    LOGO.addEventListener('mouseenter',function(){
-        if(LOGO.src = '表情2.png'){
-            LOGO.src = 'PICTUE/LOGO1.png'
-        }
-        else{
-            return;
-        }
-        
-    })
-    LOGO.addEventListener('mouseleave',function(){
-        if(LOGO.src='LOGO.png'){
-            LOGO.src='PICTUE/微笑.png';
-        }
-        
-    })
-    function LOGOchange1(){
-        if(LOGO.src = 'LOGO1.png'){
-            LOGO.src='PICTUE/微笑.png';
-        }
-    }
-    function LOGOchange2(){
-        if(LOGO.src = '微笑.png'){
-            LOGO.src='PICTUE/LOGO1.png';
-        }
-    }
-    setInterval(LOGOchange1,5000);
-    setInterval(LOGOchange2,10000);
-
-    fontheader1.addEventListener('click',function(){
-        all.style.overflow='hidden';
-        body.style.opacity=0.5;
-        all.style.backgroundColor='white';
-        detail1.style.display='flex'
-
-
-    })
-    detail1button.addEventListener('click',function(){
-        all.style.overflow='scroll';
-        body.style.opacity=1;
-        all.style.backgroundColor='black';
-        detail1.style.display='none'
-
-    })
-
-    fontlastpage.addEventListener('click' ,function(){
-        
-        font2textcontinue.style.left=currenttextpage+100+'%'
-        font2vediocontinue.style.left=currentvediopage+100+'%';
-        currentvediopage=currentvediopage+100;
-        currenttextpage=currenttextpage+100;
-        if(currentvediopage==0){
-        fontlastpage.style.display='none'}
-        if(currentvediopage>-300){
-            fontnextpage.style.display='block'
-        }
-
-    })
-    fontnextpage.addEventListener('click' ,function(){
-        font2textcontinue.style.left=currenttextpage-100+'%'
-        font2vediocontinue.style.left=currentvediopage-100+'%';
-        currentvediopage=currentvediopage-100;
-        currenttextpage=currenttextpage-100;
-        if(currentvediopage==-300){
-        fontnextpage.style.display='none'}
-        if(currentvediopage<0){
-            fontlastpage.style.display='block'
-        }
-    })
-    font2button.addEventListener('click',function(){
-        if(currenttextpage==300){
-            var url='英雄聯盟/index.html'
-        }
-        else if(currenttextpage==200){
-            var url='跑跑卡丁車/index.html'
-
-        }
-        else if(currenttextpage==100){
-            var url='爐石戰記/index.html'
-        }
-        else if(currenttextpage==0){
-            var url='傳說對決/index.html'
-        }
-        window.location.href = url;
-    })
- 
-        // 當全景面板被點擊時觸發的函式
-        function handleClick(event) {
-      // 檢查是否已經有超過5個正方形，若是則不執行以下程式碼
-      if (fontpage1.querySelectorAll('.square').length >= 5) {
-        return;
-      }
-
-      // 創建一個新的正方形元素
-      var square = document.createElement('div');
-      square.className = 'square';
-
-        // 創建一個新的正方形子元素
-        var squareItem = document.createElement('div');
-      squareItem.className = 'squareitem';
-
-      // 設置正方形元素的位置為點擊位置的中心
-      var squareSize = 100; // 正方形的尺寸
-      var x = event.clientX - squareSize / 2;
-      var y = event.clientY - squareSize / 2;
-      square.style.left = x + 'px';
-      square.style.top = y + 'px';
-
-   
-
-      // 將正方形元素添加到全景面板中
-      
-      fontpage1.appendChild(square);
-      square.appendChild(squareItem);
-         // 將正方形元素添加到全景面板中
-
-
-      // 設置定時器，在2秒後將正方形元素從全景面板中移除
-      setTimeout(function() {
-        fontpage1.removeChild(square);
-      }, 5000);
-    }
-
-    // 將點擊事件綁定到全景面板
-    fontpage1.addEventListener('click', handleClick);
-
-    function moveCircle(event) {
-        var x = event.clientX;
-        var y = event.clientY;
-        var circle = document.querySelector('.circle');
-        circle.style.left = x - 25 + 'px';  // 調整圓心位置，減去半徑的一半
-        circle.style.top = y - 25 + 'px';}
-
-        function restartAnimation() {
-  font4communicate.style.animation='none'
-  void font4communicate.offsetWidth; // 強制重繪
-  if(font4communicate.textContent=='你看過電競比賽嗎？'){
-    font4communicate.textContent='你或許該看看．．．'
-  }
- else if(font4communicate.textContent=='你或許該看看．．．'){
-    font4communicate.textContent='你喜歡什麼類型的遊戲？'
-  }
- else if(font4communicate.textContent=='你喜歡什麼類型的遊戲？'){
-    font4communicate.textContent='我偏好競技型的遊戲'
-  }
- else if(font4communicate.textContent=='我偏好競技型的遊戲'){
-    font4communicate.textContent='好想玩遊戲～'
-  }
- else if(font4communicate.textContent=='好想玩遊戲～'){
-    font4communicate.textContent='诶！你要不要跟我對打看看'
-  }
- else if(font4communicate.textContent=='诶！你要不要跟我對打看看'){
-    font4communicate.textContent='你看過電競比賽嗎？'
-  }
-
-  
-  font4communicate.style.animation=null;
-}
-
-setInterval(restartAnimation, 8000);
-
-function talking(){
-    if(font4communicate.src.inclufe(HUMANLOGO.png)){
-        font4communicate.src='PICTUE/HUMANLOGO2'
-    }
-    else if(font4communicate.src.inclufe(HUMANLOGO2.png)){
-        font4communicate.src='PICTUE/HUMANLOGO2'
-    }
-
-}
-function repeatFunction(func, times, delay) {
-  if (times > 0) {
-    func();
-    setTimeout(function() {
-      repeatFunction(func, times - 1, delay);
-    }, delay * 1000);
-  }
-}
-function loop(){
-    repeatFunction(talking, 8, 0.5);
-    setTimeout(loop,4000);
-}
- 
-loop();    
 </script>
 </html>
