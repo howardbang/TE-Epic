@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .page1{
+            width: 100vw;
+            height: 110vh;
+            background-color: rgb(219, 219, 219);
+            overflow: hidden;
+            position: relative;
+        }
+        .page1back{
+            opacity: 0.8;
+            width: 100vw;
+            position: relative;
+            top: -10vh;
+
+        }
+     .header{
+            position: absolute;
+            border: 2px solid transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20vh;
+            width: 30vw;
+            background-image: url(Rush.png);
+            left: 35%;
+            top:30%;
+            
+       
+        }
+        .page1content{
+            position:fixed;
+            border:2px solid red;
+            width: 80vw;
+            height: 80vh;
+            top:10%;
+            left: 10%;  
+            display: none;
+            box-shadow: 2px 2px 10px white,2px 2px 15px white,2px 2px 20px wheat;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .page1content .header1{
+            font-style: italic;
+            font-size: 8vh;
+            width: auto;
+            height: auto;
+            color: white;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+
+        }
+        .page1content .text{
+            font-size: 3vh;
+            width: auto;
+            height: auto;
+            color: white;
+            position: absolute;
+            left: 5%;
+            bottom: 40%;
+
+        }
+        .page1content .picture{
+            height: auto;
+            width: auto;
+            border: 2px solid blue;
+            box-shadow: 2px 2px 10px blue,2px 2px 15px rgb(125, 125, 167),2px 2px 20px rgb(72, 72, 99);
+            position: absolute;
+            right: 2%;
+            bottom: 20%;
+            
+
+        }
+        .page1content .cancel{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5VW;
+            height: 5VH;
+            background-color: aliceblue;
+            border: 2px solid black;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 4vh;
+
+        }
+        .page1content .cancel:hover{
+           cursor: pointer;
+            background-color: rgb(255, 125, 39);
+            
+
+        }
+        .page1 .introduce{
+            position: absolute;
+            border:2px solid transparent;
+            width: 40vw;
+            height: 60vh;
+            top:90%;
+            left: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 10vh;
+            background-color: rgba(0, 0, 0, 0.5); 
+            border-radius:10% ; 
+
+        }
+        
+        .page1 .introduce:hover{
+            box-shadow: 0px 0px 10px white,0px 0px 15px white,0px 0px 20px white;
+            cursor: pointer;
+            transform:translateY(-1vh);
+            
+    
+        }
+        .introduce .item1{
+            color:white;
+            width: 100%;
+            text-align: center;
+            height: auto;
+            font-size: 8vh;
+            font-style: italic;
+
+        }
+        .introduce .item2{
+            color: white;
+            text-align: center;
+            font-size:3vh;
+            
+
+}
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+        .page2{
+            width: 100vw;
+            height: 100vh;
+            background:linear-gradient(to bottom,rgb(11, 63, 43),rgb(26, 114, 126),rgb(55, 80, 109));
+            position: relative;
+           
+
+        }
+        .page2 .timetable{
+            width: 100%;
+
+        }
+        .page2line{
+        
+            width: 100VW;
+            height: 6px;
+            border-radius: 50%;
+            position:absolute;
+            background-color: blue;
+            top: 80%;
+            border: 2px solid black;
+            
+        }
+        .page2content{
+            width: 80%;
+            height: 70%;
+            position:absolute;
+            background-color: transparent;
+            left: 10%;
+            top:5%;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .page2content .item1{
+            height: 100%;
+            width: 50%;
+            background-color: transparent;
+
+        }
+        .page2content .item2{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            background-color:transparent;
+
+        }
+        .item2 .LOLteam{
+            width: 100%;
+            height: 50%;
+            background-color:transparent;
+        }
+        .item2 .introduce{
+            width: 100%;
+            height: 50%;
+            background-color: wheat;
+            font-size: 5vh;
+            display: flex;
+            justify-content: center;
+        }
+        #team1back{
+            background-image: url(orangebear.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #team2back{
+            background-image: url(team-FW.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #team3back{
+            background-image: url(team3back.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #team4back{
+            background-image: url(team4back.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #page2team1{
+            display: none;
+
+        }
+        #page2team2{
+            display: none;
+            
+        }
+        #page2team3{
+            display: none;
+            
+        }
+        #page2team4{
+            display: none;
+            
+        }
+        #page2dot1{
+        left: 20%;
+    }
+    #page2dot2{
+        left: 40%;
+    }
+    #page2dot3{
+        left: 60%;
+    }
+    #page2dot4{
+        left: 80%; 
+    }
+    #page2dot1:hover{
+        cursor: pointer;
+        background-color: rgb(120, 117, 117);
+    
+    }
+    #page2dot2:hover{
+        cursor: pointer;
+        background-color: rgb(120, 117, 117);
+    }
+    #page2dot3:hover{
+        cursor: pointer;
+        background-color: rgb(120, 117, 117);
+    }
+    #page2dot4:hover{
+        cursor: pointer;
+        background-color: rgb(120, 117, 117);
+    }
+    .dot{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        top: 78%;
+        box-shadow: 0 0 10px black;
+    }
+        .page3{
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            background-image: url(page3.png);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        
+            
+        }
+        .page3content{
+            border:3px solid transparent;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8vw;
+            position: relative;
+            left: 50%;
+            transition: left 0.1s linear;
+
+
+        }
+        #page2back{
+            background-image: url(page2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15vh;
+            border-radius: 5%;
+            text-shadow: 0 0 10px black,0 0 20px black,0 0 30px black;
+            box-shadow: 0 0 5px black,0 0 10px black,0 0 15px black,0 0 20px black;
+
+        }
+        .page3header{
+            width: auto;
+            height: auto;
+            position:absolute;
+            font-size: 15vh;
+            top: 0;
+            text-shadow: 0 0 10px white,0 0 15px white,0 0 20px wheat;
+            font-style:italic;
+        }
+        .page3main{
+            height: auto;
+            width: 33%;
+            border: 2px solid black;
+            transition: width 0.1s linear,height,0.1s linear;
+
+        }
+        .page3second{
+            height: 40%;
+            width: 25%;
+            border: 2px solid black;
+            opacity: 0.3;
+            transition: height 0.1s linear,width 0.1s linear,opacity 0.1s linear;
+
+        }
+        .page3button{
+            position: absolute;
+            height: 6vh;
+            width: 3vw;
+            background-color: transparent;
+            border-radius: 50%;
+            color: rgb(0, 0, 0);
+            font-size: 7vh;
+            text-align: center;
+            border-color: transparent;
+        }.page3button:hover{
+
+            color:rgb(102, 102, 98);
+            cursor: pointer;
+          
+        }
+        #next{
+            left: 90%;
+        }  
+        #last{
+            left: 1%;
+        }
+        .page4{
+            width: 100vw;
+            height: 100vh;
+            background-color: burlywood;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+      
+        .menu{
+            font-size: 5vh;
+            position: relative;
+            width: auto;
+            height: auto;
+            top: 0%;
+            left: 0;
+            
+        }
+        .page4header{
+            font-style: italic;
+            width: auto;
+            height: auto;
+            font-size: 10vh;
+            position: absolute;
+            left: 33%;
+            top: 0;
+
+
+        }
+        .page4content{
+            width: 80%;
+            height: 80%;
+            position: relative;
+            border: 2px solid transparent;
+            top:5%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            column-gap: 6vh;
+        }
+        .page4content .item{
+            width: 30%;
+            height: 45%;
+            background-color: beige;
+            position: relative;
+            box-shadow: 2px 2px 5px black,2px 2px 10px black,2px 2px 15px rgb(83, 83, 83);
+        }
+        .page4content .item:hover{
+            transform: translateY(-1vh);
+            cursor: pointer;
+            
+        }
+        .nav{
+            position: fixed;
+            width: 2.5vw;
+            height: 5vh;
+            top: 0;
+            border: 5px solid black;
+            overflow: hidden;
+            display: flex;
+            background-color: aliceblue;
+            align-items: center;
+            font-size: 5vh;
+            transition: width 0.5s linear,height 0.5s linear;
+        }
+        .nav:hover{
+            cursor: pointer;
+
+        }
+        .navLOGO{
+            margin-left: 5vh;
+            height: 100%;
+            width: 10vw;
+        }
+        .navLOGO:hover{
+            cursor: pointer;
+            background-color: rgb(123, 125, 126);
+        }
+        .navitem{
+            position: relative;
+            border: 2px solid black;
+            width: 30%;
+            height: 90%;
+            margin-left: 1vw;
+        }
+        #nav1:hover{
+            background-color: rgb(165, 168, 170);
+            cursor: pointer;
+        }
+        #nav2:hover{
+            background-color: rgb(165, 168, 170);
+            cursor: pointer;
+        }
+        #nav3{
+            background-color: rgb(165, 168, 170);
+            
+        }
+        #nav4:hover{
+            background-color: rgb(165, 168, 170);
+            cursor: pointer;
+        }
+        .back{
+            position: fixed;
+            right: 0;
+            top: -100%;
+            width: 5vw;
+            height: auto;
+            transition: top 1s linear ;
+
+        }
+        .top{
+            text-align: center;
+            position: fixed;
+            border: 2px solid rgb(2, 2, 2);
+            right: 0.5%;
+            top: -100%;
+            background-color:aliceblue;
+            width: 4vw;
+            height: 5vh;
+            transition: top 1s linear ;
+            box-shadow: 0 0 5px black,0 0 10px black,0 0 .15px black;
+            font-size: 3vh;
+            border-radius: 10%;
+            
+        }
+        .top:hover{
+            background-color: rgb(111, 137, 161);
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="page1"><video src="../PICTUE/Season 2_ WORLD KART CHAMPIONSHIP 精采預告｜跑跑卡丁車：飄移.mp4" class="page1back" autoplay muted loop></video>
+         <div class="header"></div>
+         <div class="introduce">
+            <div class="item1"> 遊戲介紹</div>
+        </div>
+        
+            
+    </div>
+   
+    <div class="page2"><div class=page2line>
+    </div>
+    <div id="page2dot1" class="dot"></div>
+    <div id="page2dot2" class="dot"></div>
+    <div id="page2dot3" class="dot"></div>
+    <div id="page2dot4" class="dot"></div>
+    <div class="page2content" id="page2back">經典賽事</div>
+    <div class="page2content" id="page2team1">
+        <div class="item1">
+           <video src="videoplayback.mp4" width="100%" height="100%"  controls ></video>
+        </div>
+        <div class="item2">
+            <div class="LOLteam" id="team1back"></div>
+            <div class="introduce">隊名：橘子熊_全名為Gama Bears<br> 於2013TWOP_職業電競聯賽_跑跑卡丁車第六屆總冠軍賽G3對戰強敵小草驚險奪冠<br>成員：朔月、村村、魯夫、歐文</div>
+        </div>
+    </div>
+    <div class="page2content" id="page2team2">
+        <div class="item1">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cBwMJIRhI2M" title="【爆哥Neal】出生就會鏡飄的男人爆哥 躲過停車超越第一！│新年快樂 vs. 老司機《2016 TRY冬季賽》20170103【跑跑卡丁車KartRider】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="item2">
+            <div class="LOLteam" id="team2back"></div>
+            <div class="introduce">隊名：新年快樂<br> 於《2016 TRY冬季賽》中遇到陸服強敵3s天秀操作<br>成員：爆哥、魯夫、小草</div>
+        </div>
+    </div>
+    <div class="page2content" id="page2team3">
+        <div class="item1">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QYR30W54RT4" title="爆哥斜塔夢幻拖飄技壓群雄！《2019世界爭霸賽》第二盤(搶50分)│跑跑卡丁車【爆哥Neal】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="item2">
+            <div class="LOLteam" id="team3back"></div>
+            <div class="introduce">隊名：Formosa-Beast<br> 於《2019世界爭霸賽》在地圖中爆哥技壓群雄<br>成員：爆哥、蛇丸、爆蛋、睏平</div>
+        </div>
+    </div>
+    <div class="page2content" id="page2team4">
+        <div class="item1">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SxQgIJ3rQ3c" title="NEAL對決秋天的王者李宰赫！Royal Roader再度誕生！個人賽決賽SET 2《2022 跑跑卡丁車聯賽 S2》" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="item2">
+            <div class="LOLteam" id="team4back"></div>
+            <div class="introduce">所屬隊：LSB_全名為Liiv_SANDBOX <br> 於《2022 跑跑卡丁車聯賽 S2》個人賽總決賽1v1中對上3冠王李宰賀<br>成員：爆哥</div>
+        </div>
+    </div>
+</div>
+    <div class="page3">
+        <div class="page3header">熱門選手</div>
+        <div class="page3content">
+            <image src="爆哥.jpeg"id=1 class="page3main" width="200px" height="auto"></image>
+            <image src="小草.jpg"id=2 class="page3second"></image>
+            <image src="朔月.jpg"id=3 class="page3second"></image>
+            <image src="爆蛋.jpg"id=4 class="page3second"></image>
+        </div>
+        <button class="page3button" id="last">&#12296;</button>
+        <button class="page3button" id="next">&#12297;</button>
+    </div>
+    <div class="page4">
+        <div class="page4header">更多內容發現</div>
+        <div class="page4content">
+            <div class="item" id="connect1"><img src="facebook.png" alt="" width="100%" height=100%></img></div>
+            <div class="item"id="connect2"><img src="巴哈.png" width="100%" height="100%"></div>
+            <div class="item"id="connect3"><img src="youtube.png" width="100%" height="100%"></div>
+            <div class="item"id="connect4"><img src="官網.png" width="100%" height="100%"></div>
+            <div class="item"id="connect5"><img src="DC.png" width="100%" height="100%"></div>
+            
+
+        </div>
+        
+    </div>
+    <div class="nav">
+    <div class="menu">☰</div>
+    <div  class="navLOGO"><a href="../index.html"><img src="../PICTUE/LOGO1.png" height="100vh" ></a></div>
+    <div class="navitem" id="nav1" ><a href="../英雄聯盟/index.html"><img src="../PICTUE/LOL LOGO.png" height="100%" width="100%"></a></div>
+    <div class="navitem"id="nav2"> <a href="../傳說對決/index.html"><img src="../PICTUE/LEGEND LOGO.png" height="100%" width="100%"></a></div>
+    <div class="navitem" id="nav3"><img src="../PICTUE/_rush_.png" height="100%" width="100%"></div>
+    <div class="navitem" id="nav4"> <a href="../爐石戰記/index.html"> <img src="../PICTUE/爐石 LOGO.png" height="100vh" width="100%"></a></div>
+    </div>
+    <image src="../PICTUE/rope.png  " class="back">
+    </image>
+    <div class="top">TOP</div>
+    <div class="page1content">
+        <div class="header1"><img src="氮氣.png" height="40vh">遊戲介紹&nbsp;<img src="氮氣2.png" height="40vh"></div>
+        <div class="text">跑跑卡丁車是一款競速類遊戲<br>個人賽中你的隊友只有你自己與其他7名玩家競速<br>小組賽而是自己與另外3名隊友互相配合，在跟另一支隊伍競速<br>獲得勝利的方法只有一個，盡可能不要有其他對手在前方 </div>
+        <div class="picture"><img src="picture1.jpeg"  height="500vh"></div>
+        <div class="cancel">&#x2716;</div>
+    </div>
+    
+</body>
+<script>
+    const back=document.querySelector('.back')
+    const backtop=document.querySelector('.top')
+
+    const page1content=document.querySelector('.page1content')
+    const page1introduce=document.querySelector('.page1 .introduce')
+    const page1cancel=document.querySelector('.page1content .cancel')
+    const page1image=document.getElementById('image')
+    const page2team1=document.getElementById('page2team1')
+    const page2team2=document.getElementById('page2team2')
+    const page2team3=document.getElementById('page2team3')
+    const page2team4=document.getElementById('page2team4')
+    const page2dot1=document.getElementById('page2dot1')
+    const page2dot2=document.getElementById('page2dot2')
+    const page2dot3=document.getElementById('page2dot3')
+    const page2dot4=document.getElementById('page2dot4')
+    const page3content=document.querySelector('.page3content')
+    var currentid=1;
+    var celebrity=document.getElementById(currentid)
+    const nextbutton=document.getElementById('next')
+    const lastbutton=document.getElementById('last')
+    var currentpage=50;
+    const connect1=document.getElementById('connect1')
+    const connect2=document.getElementById('connect2')
+    const connect3=document.getElementById('connect3')
+    const connect4=document.getElementById('connect4')
+    const connect5=document.getElementById('connect5')
+    const connect6=document.getElementById('connect6')
+    const nav=document.querySelector('.nav')
+    const menu=document.querySelector('.menu')
+    const navLOGO=document.querySelector('.navLOGO')
+    const nav1=document.getElementById('nav1')
+    const nav2=document.getElementById('nav2')
+    const nav3=document.getElementById('nav3')
+  
+
+    page1introduce.addEventListener('click',function(){
+        page1content.style.display='flex';
+    })
+    page1cancel.addEventListener('click',function(){
+
+        page1content.style.display='none';
+
+    })
+
+    page2dot1.addEventListener('click',function(){
+        page2team1.style.display='flex';
+        page2team2.style.display='none';
+        page2team3.style.display='none';
+        page2team4.style.display='none';
+        page2dot1.style.backgroundColor='gray'
+        page2dot2.style.backgroundColor='white'
+        page2dot3.style.backgroundColor='white'
+        page2dot4.style.backgroundColor='white'
+    })
+    page2dot2.addEventListener('click',function(){
+        page2team1.style.display='none';
+        page2team2.style.display='flex';
+        page2team3.style.display='none';
+        page2team4.style.display='none';
+        page2dot2.style.backgroundColor='gray'
+        page2dot1.style.backgroundColor='white'
+        page2dot3.style.backgroundColor='white'
+        page2dot4.style.backgroundColor='white'
+    })
+    page2dot3.addEventListener('click',function(){
+        page2team1.style.display='none';
+        page2team2.style.display='none';
+        page2team3.style.display='flex';
+        page2team4.style.display='none';
+        page2dot3.style.backgroundColor='gray'
+        page2dot2.style.backgroundColor='white'
+        page2dot4.style.backgroundColor='white'
+        page2dot1.style.backgroundColor='white'
+    })
+    page2dot4.addEventListener('click',function(){
+        page2team1.style.display='none';
+        page2team2.style.display='none';
+        page2team3.style.display='none';
+        page2team4.style.display='flex';
+        page2dot4.style.backgroundColor='gray'
+        page2dot2.style.backgroundColor='white'
+        page2dot3.style.backgroundColor='white'
+        page2dot1.style.backgroundColor='white'
+    })
+    nextbutton.addEventListener('click',function(){
+        if(currentpage>-90){
+            currentpage=currentpage-30;
+            celebrity.classList.remove("page3main")
+            celebrity.classList.add("page3second")
+            currentid=currentid+1;
+            celebrity=document.getElementById(currentid);
+            celebrity.classList.remove("page3second")
+            celebrity.classList.add("page3main")
+            page3content.style.left=currentpage+'%'
+        }
+
+          
+    })
+    lastbutton.addEventListener('click',function(){
+        if(currentpage<90){
+            currentpage=currentpage+30;
+            celebrity.classList.remove("page3main")
+            celebrity.classList.add("page3second")
+            currentid=currentid-1;
+            celebrity=document.getElementById(currentid);
+            celebrity.classList.remove("page3second")
+            celebrity.classList.add("page3main")
+            page3content.style.left=currentpage+'%'}
+
+          
+    })
+    connect1.addEventListener('click',function(){
+        window.location.href = 'https://www.facebook.com/TW.kartriderdrift';
+    })
+    connect2.addEventListener('click',function(){
+        window.location.href = 'https://forum.gamer.com.tw/B.php?bsn=37629';
+    })
+    connect3.addEventListener('click',function(){
+        window.location.href = 'https://www.youtube.com/channel/UCvFH3PxkY_uAzSXz8DDd9Ow';
+    })
+    connect4.addEventListener('click',function(){
+        window.location.href = 'https://tw.nexon.com/kartdrift/zh/news/communityevent/list';
+    })
+    connect5.addEventListener('click',function(){
+        window.location.href = 'https://discord.com/invite/kartriderdrift';
+    })
+    menu.addEventListener('click',function(){
+        if(menu.textContent=='☰'){
+            menu.textContent='☲'
+            nav.style.width='100vw'
+            nav.style.height='10vh'
+
+
+        }
+        else if(menu.textContent=='☲'){
+            menu.textContent='☰'
+            nav.style.width='2.5vw'
+            nav.style.height='5vh'
+        }
+    })
+ 
+    
+
+//偵測滾動距離
+window.addEventListener('scroll', function() {
+  
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  if(scrollPosition>=200){
+    back.style.top='0%'
+    backtop.style.top='78%'
+  }
+  else{
+    back.style.top='-100%'
+    backtop.style.top='-100%'
+  } 
+});
+    backtop.addEventListener('click',function(){
+        window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
+    })       
+    
+</script>
+</html>
