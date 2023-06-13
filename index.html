@@ -9,51 +9,99 @@
         *{
             margin: 0;
             padding: 0;
-            
         }
         body{
             overflow-x: hidden;
         }
         .page1{
             width: 100vw;
-            height: 200vh;
-            background-color: aquamarine;
+            height: 110vh;
+            background-color: rgb(219, 219, 219);
             overflow: hidden;
-            background-image: url(../PICTUE/召喚峽谷.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            
+            position: relative;
+        }
+        .page1back{
+            opacity: 0.8;
+            width: 100vw;
+            position: relative;
+            top: -10vh;
 
         }
-        .page1 .header{
-            position: relative;
+     .header{
+            position: absolute;
             border: 2px solid transparent;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             height: 20vh;
             width: 30vw;
-            background-image: url(英雄聯盟.png);
+            background-image: url(Rush.png);
             left: 35%;
-            top:10vw;
+            top:30%;
+            
        
         }
-        .page1 .content{
+        .page1content{
+            position:fixed;
+            border:2px solid red;
+            width: 80vw;
+            height: 80vh;
+            top:10%;
+            left: 10%;  
+            display: none;
+            box-shadow: 2px 2px 10px white,2px 2px 15px white,2px 2px 20px wheat;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .page1content .header1{
+            font-style: italic;
+            font-size: 8vh;
+            width: auto;
+            height: auto;
+            color: white;
             position: absolute;
-            border:2px solid transparent;
-            width: 40vw;
-            height: 60vh;
-            top:100%;
-            left: 55%;  
-            animation: 2s fade-in-animation linear ;
+            top: 10%;
+            left: 10%;
+
+        }
+        .page1content .text{
+            font-size: 3vh;
+            width: auto;
+            height: auto;
+            color: white;
+            position: absolute;
+            left: 5%;
+            bottom: 40%;
+
+        }
+        .page1content .picture{
+            height: auto;
+            width: auto;
+            border: 2px solid blue;
+            box-shadow: 2px 2px 10px blue,2px 2px 15px rgb(125, 125, 167),2px 2px 20px rgb(72, 72, 99);
+            position: absolute;
+            right: 2%;
+            bottom: 20%;
+            
+
+        }
+        .page1content .cancel{
             display: flex;
             align-items: center;
-            box-shadow: 2px 2px 10px white,2px 2px 15px white,2px 2px 20px wheat;
-            background-color: rgb(131, 119, 98,0.5);
+            justify-content: center;
+            width: 2.5VW;
+            height: 5VH;
+            background-color: aliceblue;
+            border: 2px solid black;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 4vh;
+
+        }
+        .page1content .cancel:hover{
+           cursor: pointer;
+            background-color: rgb(255, 125, 39);
             
-           
-        
 
         }
         .page1 .introduce{
@@ -61,14 +109,22 @@
             border:2px solid transparent;
             width: 40vw;
             height: 60vh;
-            top:100%;
-            left: 10%;
+            top:90%;
+            left: 30%;
             display: flex;
             flex-direction: column;
             gap: 10vh;
             background-color: rgba(0, 0, 0, 0.5); 
             border-radius:10% ; 
 
+        }
+        
+        .page1 .introduce:hover{
+            box-shadow: 0px 0px 10px white,0px 0px 15px white,0px 0px 20px white;
+            cursor: pointer;
+            transform:translateY(-1vh);
+            
+    
         }
         .introduce .item1{
             color:white;
@@ -156,7 +212,7 @@
             justify-content: center;
         }
         #team1back{
-            background-image: url(TPA\ WIN1.jpg);
+            background-image: url(orangebear.png);
             background-position: top;
             background-repeat: no-repeat;
             background-size: cover;
@@ -168,13 +224,13 @@
             background-size: cover;
         }
         #team3back{
-            background-image: url(AHQ.png);
+            background-image: url(team3back.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
         #team4back{
-            background-image: url(BYG.jpeg);
+            background-image: url(team4back.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -254,13 +310,13 @@
             align-items: center;
             gap: 8vw;
             position: relative;
-            left: 90%;
+            left: 50%;
             transition: left 0.1s linear;
 
 
         }
         #page2back{
-            background-image: url(page2.jpeg);
+            background-image: url(page2.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -304,7 +360,7 @@
             width: 3vw;
             background-color: transparent;
             border-radius: 50%;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             font-size: 7vh;
             text-align: center;
             border-color: transparent;
@@ -408,16 +464,17 @@
             height: 90%;
             margin-left: 2vw;
         }
-        #nav1{
+        #nav1:hover{
             background-color: rgb(165, 168, 170);
+            cursor: pointer;
         }
         #nav2:hover{
             background-color: rgb(165, 168, 170);
             cursor: pointer;
         }
-        #nav3:hover{
+        #nav3{
             background-color: rgb(165, 168, 170);
-            cursor: pointer;
+            
         }
         #nav4:hover{
             background-color: rgb(165, 168, 170);
@@ -456,14 +513,15 @@
     </style>
 </head>
 <body>
-    <div class="page1">
-        <div class="header"></div>
-        <div class="introduce">
+    <div class="page1"><video src="../PICTUE/Season 2_ WORLD KART CHAMPIONSHIP 精采預告｜跑跑卡丁車：飄移.mp4" class="page1back" autoplay muted loop></video>
+         <div class="header"></div>
+         <div class="introduce">
             <div class="item1"> 遊戲介紹</div>
-            <div class="item2">英雄聯盟是一款MOBA類型的遊戲<br>你將選擇一隻英雄與其他四位隊友共同奮戰<br>對付其他五名玩家，將對方的主堡推掉即可勝利</div>
+        </div>
+        
+            
     </div>
-        <div class="content"><image id="image" src="PICTURE1.jpg" width=100%></image></div>
-    </div>
+   
     <div class="page2"><div class=page2line>
     </div>
     <div id="page2dot1" class="dot"></div>
@@ -473,51 +531,48 @@
     <div class="page2content" id="page2back">經典賽事</div>
     <div class="page2content" id="page2team1">
         <div class="item1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ihaZK48a9Lw" title="S2 TPA vs. AZF 世界冠軍賽!~精彩回顧" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           <video src="videoplayback.mp4" width="100%" height="100%"  controls ></video>
         </div>
         <div class="item2">
             <div class="LOLteam" id="team1back"></div>
-            <div class="introduce">隊名：TPA_全名為Taipei-Assassins<br> 於2012年10月14日拿下英雄聯盟Season2第二季世界錦標賽<br>成員：Mistake、Stanely、Toyz、Bebe、Lilballz</div>
+            <div class="introduce">隊名：橘子熊_全名為Gama Bears<br> 於2013TWOP_職業電競聯賽_跑跑卡丁車第六屆總冠軍賽G3對戰強敵小草驚險奪冠<br>成員：朔月、村村、魯夫、歐文</div>
         </div>
     </div>
     <div class="page2content" id="page2team2">
         <div class="item1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xlhvC_u8Z_k" title="SKT vs FW 電狼覺醒完美碾壓SKT！| 《LOL》2016 世界大賽 | 16強小組賽 W1D4 精華 Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cBwMJIRhI2M" title="【爆哥Neal】出生就會鏡飄的男人爆哥 躲過停車超越第一！│新年快樂 vs. 老司機《2016 TRY冬季賽》20170103【跑跑卡丁車KartRider】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="item2">
             <div class="LOLteam" id="team2back"></div>
-            <div class="introduce">隊名：FW_全名為Flash-wolf<br> 於英雄聯盟2016賽季全球16強小組賽中壓制三冠王Faker<br>成員：MMD、Karsa、Maple、NL、SwortArt</div>
+            <div class="introduce">隊名：新年快樂<br> 於《2016 TRY冬季賽》中遇到陸服強敵3s天秀操作<br>成員：爆哥、魯夫、小草</div>
         </div>
     </div>
     <div class="page2content" id="page2team3">
         <div class="item1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8bNu7LZ2MaU" title="AHQ vs SKT LMS打架王史詩級弒神之役！西門鎖飛斯全場沸騰！ | 2017 世界大賽小組賽 W2D4 精華 Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QYR30W54RT4" title="爆哥斜塔夢幻拖飄技壓群雄！《2019世界爭霸賽》第二盤(搶50分)│跑跑卡丁車【爆哥Neal】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="item2">
             <div class="LOLteam" id="team3back"></div>
-            <div class="introduce">隊名：AHq_全名為ahqe-SportsClub<br> 於英雄聯盟2017世界大賽小組賽中擊敗連冠隊伍SKT<br>成員：Ziv、mountain、westdoor、AN、Albis</div>
+            <div class="introduce">隊名：Formosa-Beast<br> 於《2019世界爭霸賽》在地圖中爆哥技壓群雄<br>成員：爆哥、蛇丸、爆蛋、睏平</div>
         </div>
     </div>
     <div class="page2content" id="page2team4">
         <div class="item1">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bOVVrJ_Oeq8" title="HLE vs BYG | Chovy Esports vs Doggo Gaming！PK做夢都沒想到要打Chovy！Game 1 | 入圍賽Bo5 | 2021 S11世界賽精華" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SxQgIJ3rQ3c" title="NEAL對決秋天的王者李宰赫！Royal Roader再度誕生！個人賽決賽SET 2《2022 跑跑卡丁車聯賽 S2》" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="item2">
             <div class="LOLteam" id="team4back"></div>
-            <div class="introduce">隊名：BYG_全名為Beyond-Gaming <br> 於英雄聯盟2021世界大賽中對上奪冠熱門選手Chovy<br>成員：Liang、Husha、PK、Doggo、Kino</div>
+            <div class="introduce">所屬隊：LSB_全名為Liiv_SANDBOX <br> 於《2022 跑跑卡丁車聯賽 S2》個人賽總決賽1v1中對上3冠王李宰賀<br>成員：爆哥</div>
         </div>
     </div>
 </div>
     <div class="page3">
         <div class="page3header">熱門選手</div>
         <div class="page3content">
-            <image src="TOYZ.jpeg"id=1 class="page3main" width="200px" height="auto"></image>
-            <image src="LIANG.jpeg"id=2 class="page3second"></image>
-            <image src="ZIV.jpg"id=3 class="page3second"></image>
-            <image src="STANELY.jpeg"id=4 class="page3second"></image>
-            <image src="Maple.jpg"id=5 class="page3second"></image>
-            <image src="Karsa.jpeg"id=6 class="page3second"></image>
-            <image src="BEBE.jpg"id=7 class="page3second"></image>
+            <image src="爆哥.jpeg"id=1 class="page3main" width="200px" height="auto"></image>
+            <image src="小草.jpg"id=2 class="page3second"></image>
+            <image src="朔月.jpg"id=3 class="page3second"></image>
+            <image src="爆蛋.jpg"id=4 class="page3second"></image>
         </div>
         <button class="page3button" id="last">&#12296;</button>
         <button class="page3button" id="next">&#12297;</button>
@@ -525,12 +580,12 @@
     <div class="page4">
         <div class="page4header">更多內容發現</div>
         <div class="page4content">
-            <div class="item" id="connect1"><img src="LOLfacebook.png" alt="" width="100%" height=100%></img></div>
-            <div class="item"id="connect2"><img src="LOLIG.png" width="100%" height="100%"></div>
-            <div class="item"id="connect3"><img src="LOLTwitter.png" width="100%" height="100%"></div>
-            <div class="item"id="connect4"><img src="LOL電競官網.png" width="100%" height="100%"></div>
-            <div class="item"id="connect5"><img src="LOL電競賽事.png" width="100%" height="100%"></div>
-            <div class="item"id="connect6"><img src="巴哈.png" width="100%" height="100%"></div>
+            <div class="item" id="connect1"><img src="facebook.png" alt="" width="100%" height=100%></img></div>
+            <div class="item"id="connect2"><img src="巴哈.png" width="100%" height="100%"></div>
+            <div class="item"id="connect3"><img src="youtube.png" width="100%" height="100%"></div>
+            <div class="item"id="connect4"><img src="官網.png" width="100%" height="100%"></div>
+            <div class="item"id="connect5"><img src="DC.png" width="100%" height="100%"></div>
+            
 
         </div>
         
@@ -538,21 +593,29 @@
     <div class="nav">
     <div class="menu">☰</div>
     <a href="../index.html"><img src="../PICTUE/LOGO1.png" height="100vh" class="navLOGO" ></a>
-    <div class="navitem" id="nav1" ><img src="../PICTUE/LOL LOGO.png" height="100vh"></div>
-    <a href="../傳說對決/index.html"><div class="navitem"id="nav2"><img src="../PICTUE/LEGEND LOGO.png" height="100vh"></div></a>
-    <a href="../跑跑卡丁車/index.html"><div class="navitem" id="nav3"><img src="../PICTUE/_rush_.png" height="100vh"></div></a>
-    <a href="../爐石戰記/index.html"> <div class="navitem" id="nav4"> <img src="../PICTUE/爐石 LOGO.png" height="100vh"></div></a>
+   <a href="../英雄聯盟/index.html"><div class="navitem" id="nav1"><img src="../PICTUE/LOL LOGO.png" height="100vh"></div></a> 
+   <a href="../傳說對決/index.html"> <div class="navitem"id="nav2"><img src="../PICTUE/LEGEND LOGO.png" height="100vh"></div></a> 
+    <div class="navitem" id="nav3"><img src="../PICTUE/_rush_.png" height="100vh"></div></a> 
+    <a href="../爐石戰記/index.html"><div class="navitem" id="nav4"> <img src="../PICTUE/爐石 LOGO.png" height="100vh"></div></a> 
     </div>
     <image src="../PICTUE/rope.png  " class="back">
     </image>
     <div class="top">TOP</div>
+    <div class="page1content">
+        <div class="header1"><img src="氮氣.png" height="40vh">遊戲介紹&nbsp;<img src="氮氣2.png" height="40vh"></div>
+        <div class="text">跑跑卡丁車是一款競速類遊戲<br>個人賽中你的隊友只有你自己與其他7名玩家競速<br>小組賽而是自己與另外3名隊友互相配合，在跟另一支隊伍競速<br>獲得勝利的方法只有一個，盡可能不要有其他對手在前方 </div>
+        <div class="picture"><img src="picture1.jpeg"  height="500vh"></div>
+        <div class="cancel">&#x2716;</div>
+    </div>
     
 </body>
 <script>
     const back=document.querySelector('.back')
     const backtop=document.querySelector('.top')
 
-    const page1content=document.querySelector('.page1 .content')
+    const page1content=document.querySelector('.page1content')
+    const page1introduce=document.querySelector('.page1 .introduce')
+    const page1cancel=document.querySelector('.page1content .cancel')
     const page1image=document.getElementById('image')
     const page2team1=document.getElementById('page2team1')
     const page2team2=document.getElementById('page2team2')
@@ -567,7 +630,7 @@
     var celebrity=document.getElementById(currentid)
     const nextbutton=document.getElementById('next')
     const lastbutton=document.getElementById('last')
-    var currentpage=90;
+    var currentpage=50;
     const connect1=document.getElementById('connect1')
     const connect2=document.getElementById('connect2')
     const connect3=document.getElementById('connect3')
@@ -581,22 +644,15 @@
     const nav2=document.getElementById('nav2')
     const nav3=document.getElementById('nav3')
   
-    function imagechange(){
-        page1content.style.animation="none"
-        void page1content.offsetWidth;
-        if(page1image.src.includes('PICTURE1.jpg')){
-            page1image.src='PICTURE3.jpg'
-        }
-       else if(page1image.src.includes('PICTURE3.jpg')){
-        page1image.src='PICTURE2.png'
-        }
-       else if(page1image.src.includes('PICTURE2.png')){
-        page1image.src='PICTURE1.jpg'
 
-    }
-    page1content.style.animation=null
-}
-    setInterval(imagechange,7000)
+    page1introduce.addEventListener('click',function(){
+        page1content.style.display='flex';
+    })
+    page1cancel.addEventListener('click',function(){
+
+        page1content.style.display='none';
+
+    })
 
     page2dot1.addEventListener('click',function(){
         page2team1.style.display='flex';
@@ -666,22 +722,19 @@
           
     })
     connect1.addEventListener('click',function(){
-        window.location.href = 'https://www.facebook.com/leagueoflegendstw/';
+        window.location.href = 'https://www.facebook.com/TW.kartriderdrift';
     })
     connect2.addEventListener('click',function(){
-        window.location.href = 'https://www.instagram.com/leagueoflegendstw/';
+        window.location.href = 'https://forum.gamer.com.tw/B.php?bsn=37629';
     })
     connect3.addEventListener('click',function(){
-        window.location.href = 'https://twitter.com/riotgames';
+        window.location.href = 'https://www.youtube.com/channel/UCvFH3PxkY_uAzSXz8DDd9Ow';
     })
     connect4.addEventListener('click',function(){
-        window.location.href = 'https://www.leagueoflegends.com/zh-tw/news/esports/?_gl=1*1517a40*_ga*NjgzMDYzMzQwLjE2ODUwODAwOTk.*_ga_FXBJE5DEDD*MTY4NjUxMDE2Mi4xNC4wLjE2ODY1MTAxNjIuNjAuMC4w&_ga=2.144000370.678514733.1686507930-683063340.1685080099';
+        window.location.href = 'https://tw.nexon.com/kartdrift/zh/news/communityevent/list';
     })
     connect5.addEventListener('click',function(){
-        window.location.href = 'https://www.youtube.com/@lolesports';
-    })
-    connect6.addEventListener('click',function(){
-        window.location.href = 'https://forum.gamer.com.tw/B.php?bsn=17532&subbsn=3';
+        window.location.href = 'https://discord.com/invite/kartriderdrift';
     })
     menu.addEventListener('click',function(){
         if(menu.textContent=='☰'){
@@ -697,7 +750,7 @@
             nav.style.height='5vh'
         }
     })
-    
+ 
     
 
 //偵測滾動距離
